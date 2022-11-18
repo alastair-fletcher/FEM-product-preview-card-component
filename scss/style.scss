@@ -1,0 +1,128 @@
+$dark-cyan: #3c8067;
+$cream: #f2ebe3;
+$very-dark-blue: #1c232b;
+$dark-greyish-blue: #6c7289;
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: $cream;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+
+  img {
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .text-container {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2em;
+    border-radius: 0px 10px 10px 0px;
+
+    .top-line {
+      letter-spacing: 0.5em;
+      font-size: 10px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-family: Fraunces;
+      color: $very-dark-blue;
+      margin: 0.6em 0;
+    }
+
+    p {
+      color: $dark-greyish-blue;
+      line-height: 1.5;
+    }
+
+    .reduced-price {
+      display: flex;
+      align-items: center;
+      color: $dark-cyan;
+      font-family: Fraunces;
+      font-weight: 700;
+      margin-top: 0.6em;
+      font-size: 2.3em;
+
+      .price {
+        color: $dark-greyish-blue;
+        font-family: Montserrat;
+        margin-left: 1.5em;
+        font-weight: 500;
+        text-decoration: line-through;
+        font-size: 0.4em;
+      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $dark-cyan;
+      color: $white;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      height: 3.5em;
+      font-weight: 700;
+      margin-top: auto;
+      cursor: pointer;
+
+      img {
+        height: 40%;
+        width: auto;
+        margin-right: 1em;
+      }
+    }
+
+    button:hover {
+      background-color: #244c3d;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 360px;
+
+    .product-image {
+      content: url('/images/image-product-mobile.jpg');
+      border-radius: 10px 10px 0px 0px;
+      width: 100%;
+    }
+
+    .text-container {
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+
+      h1 {
+        margin: 0.4em 0;
+      }
+      .reduced-price {
+        margin: 0.4em 0;
+      }
+    }
+  }
+}
