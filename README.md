@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/alastair-fletcher/FEM-product-preview-card-component](https://github.com/alastair-fletcher/FEM-product-preview-card-component)
+- Live Site URL: [https://spontaneous-torte-fec908.netlify.app/](https://spontaneous-torte-fec908.netlify.app/)
 
 ### Built with
 
